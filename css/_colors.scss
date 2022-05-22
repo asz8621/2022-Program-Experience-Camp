@@ -1,0 +1,28 @@
+$primary: #3F5D45;
+$secondary: #EAF0ED;
+$white: #FFFFFF;
+$web-color: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"white": $white,
+);
+$web-type: 'bg', 'text', 'border';
+$web-type: (
+	bg: background-color,
+	text: color,
+	border: border,
+);
+
+@each $colorKey, $color in $web-color {
+  @each $typeKey, $type in $web-type {
+		@if $typeKey == 'border' {
+			.#{$typeKey}-#{$colorKey} {
+				#{$type}: $color 1px solid;
+			}
+		} @else {
+			.#{$typeKey}-#{$colorKey} {
+				#{$type}: $color;
+			}
+		}
+  }
+}

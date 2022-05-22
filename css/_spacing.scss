@@ -1,0 +1,66 @@
+$spacer: 1rem !default;
+$spacing-value: (
+  p: padding,
+  m: margin,
+);
+$spacing-direction: (
+  l: left,
+  r: right,
+  t: top,
+  b: bottom,
+);
+$spacing-array: (
+  0: $spacer * 0,
+  1: $spacer * 0.625,
+  2: $spacer * 0.75,
+  3: $spacer * 1,
+  4: $spacer * 1.25,
+  5: $spacer * 1.875,
+  6: $spacer * 2,
+  7: $spacer * 2.5,
+  8: $spacer * 3,
+  9: $spacer * 3.5,
+  10: $spacer * 3.75,
+  auto: auto,
+);
+@each $mainKey, $mainVal in $spacing-value {
+  // p-*, m-*
+  @each $arrKey, $arrVal in $spacing-array {    
+    @if $arrKey != auto {
+      .#{$mainKey}-#{$arrKey} {
+        #{$mainVal}: $arrVal;
+      }
+    }
+    // px-*
+    @if $mainKey == p and $arrKey != auto {
+      .#{$mainKey}x-#{$arrKey} {
+        #{$mainVal}-left: $arrVal;
+        #{$mainVal}-right: $arrVal;
+      }
+      .#{$mainKey}y-#{$arrKey} {
+        #{$mainVal}-top: $arrVal;
+        #{$mainVal}-bottom: $arrVal;
+      }
+    }
+    // m-auto
+    @if $mainKey == m and $arrKey == auto {
+      .#{$mainKey}-#{$arrKey} {
+        #{$mainVal}: $arrVal;
+      }
+    }
+    // pl-*, pr-*, pt-*, pb-*, ml-*, mr-*, mt-*, mb-*
+    @each $key, $value in $spacing-direction {
+      @if $arrKey != auto {
+        .#{$mainKey}#{$key}-#{$arrKey} {
+          #{$mainVal}-#{$value}: $arrVal;
+        }
+      }
+      // ml-auto, mr-auto, mt-auto, mb-auto
+      @if $mainKey != p and $arrKey == auto {
+        .#{$mainKey}#{$key}-#{$arrKey} {
+          #{$mainVal}-#{$value}: auto;
+        }
+      }
+    }
+  }
+}
