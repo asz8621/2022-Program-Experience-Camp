@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>產品列表排版</title>
-  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
-  <div class="container">
+  <header class="container">
     <nav class="nav d-flex align-items-center py-5">
-      <div class="logo mr-auto">
+      <h1 class="logo mr-auto">
         <a href="#" class="logoImg d-block w-100 h-100"></a>
-      </div>
+      </h1>
       <ul class="menu d-flex align-items-center">
         <li class="menuItem">
           <a href="#" class="d-block text-primary fw-600 px-4 py-1">首頁</a>
@@ -30,145 +30,135 @@
         </li>
       </ul>
     </nav>
-  </div>
+  </header>
 
   <main class="container">
     <div class="carousel mb-10">
-      <div class="carouselItem">
-        <img src="images/banner.png" alt="carousel" class="img-fluid">
-      </div>
+      <img src="images/banner.png" alt="carousel" class="img-fluid">
     </div>
     <div class="d-flex">
       <div class="productMenu fw-600 mr-4">
-        <p class="productMenuTitle text-white bg-primary py-3">甜點類別</p>
+        <h2 class="productMenuTitle text-white bg-primary py-3">甜點類別</h2>
         <ul>
-          <li class="productMenuLink active">
-            <a href="#" class="d-flex justify-content-center align-items-center text-primary py-3">
-              <h2>
-                所有甜點<span class="pl-1">(48)</span>
-              </h2>
+          <li class="productMenuItem active">
+            <a href="#" class="productMenuLink d-block text-primary py-3">
+              所有甜點<span class="pl-1">(48)</span>
             </a>
           </li>
-          <li class="productMenuLink">
-            <a href="#" class="d-flex justify-content-center align-items-center text-primary py-3">
-              <h2>
-                本日精選<span class="pl-1">(10)</span>
-              </h2>
+          <li class="productMenuItem">
+            <a href="#" class="productMenuLink d-block text-primary py-3">
+              本日精選<span class="pl-1">(10)</span>
             </a>
           </li>
-          <li class="productMenuLink">
-            <a href="#" class="d-flex justify-content-center align-items-center text-primary py-3">
-              <h2>
-                人氣推薦<span class="pl-1">(26)</span>
-              </h2>
+          <li class="productMenuItem">
+            <a href="#" class="productMenuLink d-block text-primary py-3">
+              人氣推薦<span class="pl-1">(26)</span>
             </a>
           </li>
-          <li class="productMenuLink">
-            <a href="#" class="d-flex justify-content-center align-items-center text-primary py-3">
-              <h2>
-                新品上市<span class="pl-1">(12)</span>
-              </h2>
+          <li class="productMenuItem">
+            <a href="#" class="productMenuLink d-block text-primary py-3">
+              新品上市<span class="pl-1">(12)</span>
             </a>
           </li>
         </ul>
       </div>
-      <div class="card">
+      <div class="card mb-1">
         <ul class="d-flex justify-content-between flex-wrap">
           <li class="cardItem border-secondary mb-4">
-            <div class="pos-r mb-2">
-              <div class="cardImagesText pos-a bg-primary text-white fw-600">
+            <div class="pos-r">
+              <div class="cardImagesText pos-a bg-primary text-white p-1 fw-600">
                 本日精選
               </div>
               <a href="javascript:;" class="cardImagesIcon pos-a"></a>
               <a href="javascript:;">
-                <img src="./images/p-1.png" alt="" class="img-fluid">
+                <img src="./images/p-1.png" alt="藍莓水果優格" class="img-fluid">
               </a>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-4 mb-2">
-              <h3 class="fw-300">焦糖瑪卡龍</h3>
-              <p class="fw-600 fz-l">NT$ 450</p>
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="cardItemTitle fw-300 py-2">藍莓水果優格</h3>
+              <p class="cardItemPrice fw-600 fz-l py-2">NT$ 450</p>
             </div>
-            <button type="button" class="text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
+            <button type="button" class="addcartBtn text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
           </li>
           <li class="cardItem border-secondary mb-4">
-            <div class="pos-r mb-2">
-              <div class="cardImagesText pos-a bg-primary text-white">
+            <div class="pos-r">
+              <div class="cardImagesText pos-a bg-primary text-white p-1">
                 本日精選
               </div>
               <a href="javascript:;" class="cardImagesIcon pos-a"></a>
               <a href="javascript:;">
-                <img src="./images/p-2.png" alt="">
+                <img src="./images/p-2.png" alt="法式甜甜圈" class="img-fluid">
               </a>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-4 mb-2">
-              <h3 class="fw-300">焦糖瑪卡龍</h3>
-              <p class="fw-600 fz-l">NT$ 450</p>
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="cardItemTitle fw-300 py-2">法式甜甜圈</h3>
+              <p class="cardItemPrice fw-600 fz-l py-2">NT$ 650</p>
             </div>
-            <button type="button" class="text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
+            <button type="button" class="addcartBtn text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
           </li>
           <li class="cardItem border-secondary mb-4">
-            <div class="pos-r mb-2">
-              <div class="cardImagesText pos-a bg-primary text-white">
+            <div class="pos-r">
+              <div class="cardImagesText pos-a bg-primary text-white p-1">
                 本日精選
               </div>
               <a href="javascript:;" class="cardImagesIcon pos-a"></a>
               <a href="javascript:;">
-                <img src="./images/p-3.png" alt="">
+                <img src="./images/p-3.png" alt="草莓塔" class="img-fluid">
               </a>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-4 mb-2">
-              <h3 class="fw-300">焦糖瑪卡龍</h3>
-              <p class="fw-600 fz-l">NT$ 450</p>
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="cardItemTitle fw-300 py-2">草莓塔</h3>
+              <p class="cardItemPrice fw-600 fz-l py-2">NT$ 450</p>
             </div>
-            <button type="button" class="text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
+            <button type="button" class="addcartBtn text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
           </li>
           <li class="cardItem border-secondary mb-4">
-            <div class="pos-r mb-2">
-              <div class="cardImagesText pos-a bg-primary text-white">
+            <div class="pos-r">
+              <div class="cardImagesText pos-a bg-primary text-white p-1">
                 本日精選
               </div>
               <a href="javascript:;" class="cardImagesIcon pos-a"></a>
               <a href="javascript:;">
-                <img src="./images/p-4.png" alt="">
+                <img src="./images/p-4.png" alt="綜合水果乾塔" class="img-fluid">
               </a>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-4 mb-2">
-              <h3 class="fw-300">焦糖瑪卡龍</h3>
-              <p class="fw-600 fz-l">NT$ 450</p>
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="cardItemTitle fw-300 py-2">綜合水果乾塔</h3>
+              <p class="cardItemPrice fw-600 fz-l py-2">NT$ 450</p>
             </div>
-            <button type="button" class="text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
+            <button type="button" class="addcartBtn text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
           </li>
           <li class="cardItem border-secondary mb-4">
-            <div class="pos-r mb-2">
-              <div class="cardImagesText pos-a bg-primary text-white">
+            <div class="pos-r">
+              <div class="cardImagesText pos-a bg-primary text-white p-1">
                 本日精選
               </div>
               <a href="javascript:;" class="cardImagesIcon pos-a"></a>
               <a href="javascript:;">
-                <img src="./images/p-5.png" alt="">
+                <img src="./images/p-5.png" alt="蔓越莓奶油蛋糕" class="img-fluid">
               </a>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-4 mb-2">
-              <h3 class="fw-300">焦糖瑪卡龍</h3>
-              <p class="fw-600 fz-l">NT$ 450</p>
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="cardItemTitle fw-300 py-2">蔓越莓奶油蛋糕</h3>
+              <p class="cardItemPrice fw-600 fz-l py-2">NT$ 450</p>
             </div>
-            <button type="button" class="text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
+            <button type="button" class="addcartBtn text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
           </li>
           <li class="cardItem border-secondary mb-4">
-            <div class="pos-r mb-2">
-              <div class="cardImagesText pos-a bg-primary text-white">
+            <div class="pos-r">
+              <div class="cardImagesText pos-a bg-primary text-white p-1">
                 本日精選
               </div>
               <a href="javascript:;" class="cardImagesIcon pos-a"></a>
               <a href="javascript:;">
-                <img src="./images/p-6.png" alt="">
+                <img src="./images/p-6.png" alt="草莓冰淇淋" class="img-fluid">
               </a>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-4 mb-2">
-              <h3 class="fw-300">焦糖瑪卡龍</h3>
-              <p class="fw-600 fz-l">NT$ 450</p>
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="cardItemTitle fw-300 py-2">草莓冰淇淋</h3>
+              <p class="cardItemPrice fw-600 fz-l py-2">NT$ 450</p>
             </div>
-            <button type="button" class="text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
+            <button type="button" class="addcartBtn text-primary bg-secondary border-secondary w-100 p-3 fz-l fw-600">加入購物車</button>
           </li>
         </ul>
       </div>
@@ -196,25 +186,25 @@
     </ul>
   </main>
 
-  <div class="subscription bg-primary">
+  <div class="subscription bg-primary py-5">
     <div class="container h-100">
       <div class="d-flex justify-content-between align-items-center h-100">
         <div class="d-flex align-items-center">
           <div class="subscriptionIcon mr-4"></div>
-          <p class="text-secondary fz-l">訂閱你我的甜蜜郵件</p>
+          <h2 class="text-secondary fz-l">訂閱你我的甜蜜郵件</h2>
         </div>
         <form class="form pos-r">
           <span class="formIcon pos-a"></span>
-          <input type="text" name="" id="" class="formInput border-secondary w-100 h-100 fz-l">
+          <input type="email" name="email" class="formInput border-secondary w-100 h-100 fz-l py-2 px-max">
           <button type="button" class="subscriptionBtn pos-a">
-            <span class="subscriptionBtnIcon"></span>
+            <span class="subscriptionBtnIcon m-auto"></span>
           </button>
         </form>
       </div>
     </div>
   </div>
 
-  <footer class="footer bg-secondary p-5">
+  <footer class="footer bg-secondary p-7">
     <div class="container h-100">
       <div class="d-flex flex-column justify-content-between h-100">
         <div class="d-flex h-100 mb-5">
@@ -222,29 +212,33 @@
             <div class="footerLogo"></div>
             <ul class="fw-bold">
               <li>
-                <a href="tel: 07-1234-5678" class="text-primary">07-1234-5678</a>
+                <a href="tel: 07-1234-5678" class="footerInfoLink text-primary">07-1234-5678</a>
               </li>
               <li>
-                <a href="mailto: sweetaste@email.com " class="text-primary">sweetaste@email.com </a>
+                <a href="mailto: sweetaste@email.com " class="footerInfoLink text-primary">sweetaste@email.com </a>
               </li>
               <li>高雄市新興區幸福路 520 號</li>
             </ul>
           </div>
-          <div class="footerText fz-l fw-bold">
+          <div class="footerText fz-l fw-bold ml-auto">
             <div>
               <span>今天是個</span>
               <span class="line"></span>
             </div>
-            <div class="lineBreakText">吃甜點的好日子。</div>
+            <div class="pt-2">吃甜點的好日子。</div>
           </div>
         </div>
         <div class="d-flex justify-content-between align-items-center">
           <ul class="footerIcons d-flex">
             <li class="footerIconItem">
-              <a href="#" class="lineIcon"></a>
+              <a href="javascript:;">
+                <img src="./images/ic-line@.svg" alt="line">
+              </a>
             </li>
             <li class="footerIconItem">
-              <a href="#" class="facebookIcon"></a>
+              <a href="javascript:;">
+                <img src="./images/ic-facebook.svg" alt="facebook">
+              </a>
             </li>
           </ul>
           <div class="copyright">© 2018 Sweetaste* All Rights Reserved</div>

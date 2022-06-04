@@ -1,0 +1,32 @@
+.footer {
+  .footerLogo {
+      width: 171px;
+      height: 27px;
+      background: url('../images/logotype-lg-dark.svg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+  .footerIcons {
+    .footerIconItem {
+      width: 32px;
+      margin-right: 0.5rem;
+    }
+  }
+  .footerText {
+    width: 60px;
+    writing-mode: vertical-rl;
+  }
+  .line {
+    height: 44px;
+    width: 1px;
+    background: $primary;
+    display: inline-block;
+  }
+  .footerInfoLink {
+    transition: .3s;
+    &:hover {
+      color: lighten($primary, 20%);
+    }
+  }
+}

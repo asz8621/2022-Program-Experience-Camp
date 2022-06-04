@@ -21,6 +21,7 @@ $spacing-array: (
   8: $spacer * 3,
   9: $spacer * 3.5,
   10: $spacer * 3.75,
+  max: $spacer * 4,
   auto: auto,
 );
 @each $mainKey, $mainVal in $spacing-value {

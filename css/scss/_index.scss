@@ -1,0 +1,153 @@
+.productMenu {
+  width: 300px;
+  text-align: center;
+  font-size: 1.5rem;
+  .productMenuItem {
+    border: 1px solid #EAF0ED;
+    &.active {
+      background: $secondary;
+    }
+  }
+  .productMenuLink {
+    transition: .3s;
+    &:hover {
+      background: $secondary;
+    }
+  }
+}
+
+.card {
+  width: calc(100% - 300px - 1.25rem);
+  .cardImagesText {
+    top: 0;
+    left: 20px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+  }
+  .cardImagesIcon {
+    top: 20px;
+    right: 22px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/favorite_border.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .cardItemTitle {
+    width: 150px;
+    border-right: 1px solid $secondary;
+  }
+  .cardItemPrice {
+    text-align: right;
+    width: calc(100% - 150px);
+  }
+  .addcartBtn {
+    transition: 0.3s;
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+}
+
+.pagination {
+  font-size: 20px;
+  .paginationItem {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid $secondary;
+    &:first-child {
+      border-right: none;
+    }
+    &:last-child {
+      border-left: none;
+    }
+    &.active {
+      background: $primary;
+      .paginationItemLink {
+        color: $white;
+      }
+      &:hover {
+        background: $primary;
+      }
+    }
+    &:hover {
+      background: $secondary;
+    }
+    .paginationItemLink {
+      display: block;
+      color: $primary;
+    }
+    .leftIcon {
+      width: 24px;
+      height: 24px;
+      background: url('../images/arrow_left.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .rightIcon {
+      width: 24px;
+      height: 24px;
+      background: url('../images/arrow_right.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.subscription{
+  .subscriptionIcon {
+      width: 40px;
+      height: 40px;
+      background: url('../images/logo-light.svg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+  .form {
+    width: 380px;
+    .formIcon {
+      top: 16px;
+      left: 20px;
+      width: 24px;
+      height: 24px;
+      background: url('../images/mail-24px.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .formInput {
+      outline: none;
+      background: $secondary;
+    }
+    .subscriptionBtn {
+      outline: none;
+      top: 0;
+      right: 0;
+      width: 64px;
+      height: 100%;
+      background: #FFE180;
+      border: #FFE180 1px solid;
+      transition: .3s;
+      &:hover {
+        background: darken(#FFE180, 10%);
+        border: darken(#FFE180, 10%) 1px solid;
+      }
+      .subscriptionBtnIcon {
+        width: 24px;
+        height: 24px;
+        background: url('../images/arrow_forward-24px.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+      }
+    }
+  }
+}
